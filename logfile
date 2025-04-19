@@ -1,0 +1,16 @@
+2025-04-15 12:36:01.443 IST [35568] LOG:  starting PostgreSQL 14.17 (Homebrew) on aarch64-apple-darwin24.2.0, compiled by Apple clang version 16.0.0 (clang-1600.0.26.6), 64-bit
+2025-04-15 12:36:01.445 IST [35568] LOG:  could not bind IPv6 address "::1": Address already in use
+2025-04-15 12:36:01.445 IST [35568] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-04-15 12:36:01.445 IST [35568] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2025-04-15 12:36:01.445 IST [35568] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2025-04-15 12:36:01.445 IST [35568] WARNING:  could not create listen socket for "localhost"
+2025-04-15 12:36:01.445 IST [35568] FATAL:  could not create any TCP/IP sockets
+2025-04-15 12:36:01.445 IST [35568] LOG:  database system is shut down
+2025-04-15 12:41:20.199 IST [35920] LOG:  starting PostgreSQL 14.17 (Homebrew) on aarch64-apple-darwin24.2.0, compiled by Apple clang version 16.0.0 (clang-1600.0.26.6), 64-bit
+2025-04-15 12:41:20.201 IST [35920] LOG:  listening on IPv6 address "::1", port 5432
+2025-04-15 12:41:20.201 IST [35920] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-04-15 12:41:20.201 IST [35920] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2025-04-15 12:41:20.205 IST [35921] LOG:  database system was shut down at 2025-04-15 12:33:36 IST
+2025-04-15 12:41:20.209 IST [35920] LOG:  database system is ready to accept connections
+2025-04-15 13:57:51.781 IST [36550] ERROR:  relation "django_content_type" does not exist at character 106
+2025-04-15 13:57:51.781 IST [36550] STATEMENT:  SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'

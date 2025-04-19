@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Job</title>
+</head>
+<body>
+    <h2>Edit Job</h2>
+    <a href="/job/board/">Back to Job Board</a>
+    <form method="post" action="">
+        {% csrf_token %}
+        <input type="text" name="title" value="{{ job.title }}" required>
+        <input type="text" name="description" value="{{ job.description }}" required>
+        <input type="text" name="company" value="{{ job.company }}" required>
+        <button type="submit">Save Changes</button>
+    </form>
+</body>
+</html>

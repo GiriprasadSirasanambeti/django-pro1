@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+    <h2>Welcome, {{ user.username }}!</h2>
+    <p>You are Logged in.</p>
+    <a href="/accounts/logout/">Logout</a>
+    <ul>
+        {% for job in jobs %}
+            <li>{{ job.title }} at {{ job.company }} - {{ job.description }} (Posted: {{ job.created_at }})
+                <a href="/job/edit/{{ job.id }}/">Edit</a>
+                <a href="/job/delete/{{ job.id }}/">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <form method="post" action="/job/add/">
+        {% csrf_token %}
+        <input type="text" name="title" placeholder="Job Title" required>
+        <input type="text" name="description" placeholder="Description" required>
+        <input type="text" name="company" placeholder="Company" required>
+        <button type="submit">Add Job</button>
+    </form>
+</body>
+</html>
